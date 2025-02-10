@@ -16,6 +16,7 @@
     "yeoman-generator"
   ],
   "scripts": {
+    "commit": "commit",
     "clean": "rm -rf node_modules",
     "build": "tsc",
     "type_check": "tsc --noEmit",
@@ -26,6 +27,9 @@
     "yeoman-generator": "^7.4.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@commitlint/prompt-cli": "^19.7.1",
     "@eslint/compat": "^1.2.5",
     "@typescript-eslint/eslint-plugin": "^8.20.0",
     "@typescript-eslint/parser": "^8.20.0",
