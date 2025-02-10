@@ -1,9 +1,9 @@
 {
   "name": "generator-clean-project",
   "version": "0.1.0",
-  "description": "",
+  "description": "Generator to start a project properly",
   "author": "AnthoineSG <anthoine.saint-germain@gmail.com> (https://anthoine.dev/)",
-  "homepage": "",
+  "homepage": "https://github.com/AnthoineSG/generator-clean-project/blob/main/README.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/AnthoineSG/generator-clean-project"
@@ -16,13 +16,24 @@
     "yeoman-generator"
   ],
   "scripts": {
+    "clean": "rm -rf node_modules",
     "build": "tsc",
-    "type_check": "tsc --noEmit"
+    "type_check": "tsc --noEmit",
+    "lint": "eslint",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "yeoman-generator": "^7.4.0"
   },
   "devDependencies": {
-    "typescript": "^5.7.3"
+    "@eslint/compat": "^1.2.5",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "prettier": "^3.4.2",
+    "typescript": "~5.3.3"
   }
 }

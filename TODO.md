@@ -10,4 +10,4 @@ npm run build
 
 ouvrir un dossier de test
 
-yo anthoinesg
+yo clean-project

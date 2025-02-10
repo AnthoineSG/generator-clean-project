@@ -2,13 +2,12 @@
   "compilerOptions": {
     "rootDirs": ["src"],
     "outDir": "app/",
-    "allowJs": false,
     "strict": true,
     "target": "es6",
     "module": "NodeNext",
-    "moduleResolution" :"nodenext",
+    "moduleResolution": "nodenext",
     "skipLibCheck": true
   },
   "include": ["src"],
-  "exclude": ["node_modules"]
+  "exclude": []
 }

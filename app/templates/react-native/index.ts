@@ -1,1 +1,1 @@
-export const reactNative = "react native";
+export const reactNative = 'react native';
