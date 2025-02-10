@@ -1,0 +1,28 @@
+{
+  "name": "generator-clean-project",
+  "version": "0.1.0",
+  "description": "",
+  "author": "AnthoineSG <anthoine.saint-germain@gmail.com> (https://anthoine.dev/)",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnthoineSG/generator-clean-project"
+  },
+  "type": "module",
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "type_check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "yeoman-generator": "^7.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
