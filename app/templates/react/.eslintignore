@@ -1,0 +1,6 @@
+node_modules
+public
+.prettierrc.cjs
+pnpm-lock.yaml
+README.md
+tsconfig.json
