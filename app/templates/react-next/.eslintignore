@@ -1,0 +1,11 @@
+.next
+node_modules
+public
+.prettierrc.cjs
+next.env.d.ts
+next.config.js
+pnpm-lock.yaml
+postcss.config.js
+README.md
+taillwind.config.ts
+tsconfig.json

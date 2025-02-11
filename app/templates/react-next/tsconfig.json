@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [{ "name": "next" }],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@/components": ["./app/components"],
+      "@/components/*": ["./app/components/*"],
+      "@/data": ["./app/data"],
+      "@/data/*": ["./app/data/*"],
+      "@/enums": ["./app/enums"],
+      "@/enums/*": ["./app/enums/*"],
+      "@/utils/functions": ["./app/utils/functions"],
+      "@/utils/functions/*": ["./app/utils/functions/*"],
+      "@/services": ["./app/services"],
+      "@/services/*": ["./app/services/*"],
+      "@/constants": ["./app/constants"],
+      "@/constants/*": ["./app/constants/*"],
+      "@/ui-kit": ["./app/ui-kit"],
+      "@/ui-kit/*": ["./app/ui-kit/*"],
+      "@/types": ["./app/types"],
+      "@/types/*": ["./app/types/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
