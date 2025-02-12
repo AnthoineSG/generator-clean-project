@@ -13,7 +13,9 @@ export type Package = {
   };
   repository: string;
   homepage: string;
+  main?: string;
   type?: string;
+  jest?: Record<string, string>;
   scripts: Record<string, string>;
   dependencies: Record<string, string>;
   devDependencies: Record<string, string>;
