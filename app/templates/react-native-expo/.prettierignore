@@ -1,0 +1,9 @@
+node_modules/
+build/
+dist/
+.expo
+.storybook/storybook.requires.ts
+metro.config.js
+babel.config.js
+expo-env.d.ts
+react-app-env.d.ts
