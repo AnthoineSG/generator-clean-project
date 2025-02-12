@@ -1,0 +1,53 @@
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "project"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "", email = "example@exemple.com" },
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["python-dotenv (>=1.0.1,<2.0.0)"]
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.14.1"
+isort = "^6.0.0"
+pytest = "^8.3.4"
+commitizen = "^4.1.1"
+pre-commit = "^4.1.0"
+
+[tool.poetry.scripts]
+start = "scripts.start:run"
+check = "scripts.check:run"
+format = "scripts.format:run"
+test = "scripts.test:run"
+type_check = "scripts.type_check:run"
+sort_imports = "scripts.sort_imports:run"
+
+# ! PYTEST
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = "error"
+xfail_strict = true
+
+# ! RUFF
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "tab"
+docstring-code-format = true
+
+# ! MYPY
+[tool.mypy]
+mypy_path = "."
+strict = true
+
+# ! COMMITIZEN
+[tool.commitizen]
+version = "0.1.0"
+version_files = ["pyproject.toml:^version"]
+update_changelog_on_bump = true
+tag_format = "$version"

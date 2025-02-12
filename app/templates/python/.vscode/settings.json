@@ -1,0 +1,6 @@
+{
+  "python.analysis.extraPaths": [
+    "./project"
+  ],
+  "editor.tabSize": 4
+}
